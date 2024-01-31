@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=(()=>{const e=e=>({length:e,hits:0,sunk:!1});return{createShips:e,createAllShips:()=>{let t=[];for(let l=4;l>=1;l--)for(let s=4;s>=l;s--)t.push(e(l));return t}}})();console.log(e.createAllShips().length),console.log(e.createAllShips())})();
