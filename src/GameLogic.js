@@ -26,3 +26,13 @@ export const gameboard = () => {
 
     createGrid();
 }
+
+export const gameplay = (() => {
+
+    const placeShips =  () => {};
+
+    const isSunk = () => {};
+
+    const receiveAttack = () => {};
+
+})(); 
