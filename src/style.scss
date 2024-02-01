@@ -1,0 +1,18 @@
+
+
+#gameboard {
+    display: grid;
+    border: 1px solid grey;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+    padding: 5rem;
+}
+
+.square {
+    border: dashed rgba(128, 128, 128, 0.555) 0.5px;
+    background-color: white;
+}
