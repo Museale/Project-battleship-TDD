@@ -1,5 +1,7 @@
+import { computer } from "./Computer";
 import { battleship } from "./ShipFactory";
 
 const driver = (() => {
-    console.log(battleship.createAllShips());
+    console.log('player',battleship.createAllShips());
+    console.log('comp', computer());
 })();

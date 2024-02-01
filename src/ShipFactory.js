@@ -3,7 +3,9 @@ export const battleship = (() =>  {
     const createShips = (length) => {
         const ship = {
             length: length,
-            hits: 0,
+            hits: function(hit) {
+                return hit + 1;
+            },
             sunk: false
         }
         return ship;
@@ -14,7 +16,7 @@ export const battleship = (() =>  {
 
         for(let i = 4; i >= 1; i--) {
             for(let j = 4; j >= i; j--) {
-                shipArray.push(createShips(i));
+                shipArray.push(createShips(i)); 
             }
         }
         return shipArray;
